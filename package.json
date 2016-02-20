@@ -1,6 +1,6 @@
 {
   "name": "factory-panda",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "FactoryGirl like TDD test object generator in ES6 and compiled with babel",
   "main": "dist/factory.js",
   "dependencies": {},
