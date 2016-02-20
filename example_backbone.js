@@ -1,14 +1,11 @@
 let {FactoryBro, FactoryDefinition} = require('./factory')
 
+
 var Backbone = require('backbone')
-var Sidebar = Backbone.Model.extend({
-  promptColor: function() {
-    var cssColor = prompt("Please enter a CSS color:");
-    this.set({color: cssColor});
-  }
+var User = Backbone.Model.extend({
 });
 
-FactoryBro.define('user', Sidebar, class UserFactory extends FactoryDefinition {
+FactoryBro.define('user', User, class UserFactory extends FactoryDefinition {
   static build(instance, traits=[], options={}) {
     super.build(instance, traits, options);
     return instance
