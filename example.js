@@ -10,12 +10,15 @@ var Sidebar = Backbone.Model.extend({
 
 FactoryBro.define('user', Sidebar, class UserFactory extends FactoryDefinition {
   static build(instance, traits=[], options={}) {
-    instance.set('foo', 'boo')
     super.build(instance, traits, options);
-    console.log(instance.get('foo'));
     return instance
+  }
+
+  static valid(instance) {
+    instance.set('valid', true)
   }
 });
 console.log(FactoryBro.build('user'))
+console.log(FactoryBro.build('user', ['valid']))
 
 // console.log(Sidebar);

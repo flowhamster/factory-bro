@@ -27,9 +27,9 @@ class Factory {
 let FactoryBro = new Factory()
 
 class FactoryDefinition {
-  static build(self, traits=[], options={}) {
+  static build(instance, traits=[], options={}) {
     traits.forEach( (trait) => {
-      self[trait].call(self, options)
+      this[trait](instance, options)
     })
   }
 }
