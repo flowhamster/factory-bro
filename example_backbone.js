@@ -1,11 +1,11 @@
-let {FactoryBro, FactoryDefinition} = require('./factory')
+let {FactoryPanda, FactoryDefinition} = require('./factory')
 
 
 var Backbone = require('backbone')
 var User = Backbone.Model.extend({
 });
 
-FactoryBro.define('user', User, class UserFactory extends FactoryDefinition {
+FactoryPanda.define('user', User, class UserFactory extends FactoryDefinition {
   static build(instance, traits=[], options={}) {
     super.build(instance, traits, options);
     return instance
@@ -23,6 +23,6 @@ FactoryBro.define('user', User, class UserFactory extends FactoryDefinition {
     instance.set('mobile', cc+"numbers")
   }
 });
-console.log(FactoryBro.build('user'))
-console.log(FactoryBro.build('user', ['valid']))
-console.log(FactoryBro.build('user', ['valid', 'has_mobile'], {country_code:'42'}))
+console.log(FactoryPanda.build('user'))
+console.log(FactoryPanda.build('user', ['valid']))
+console.log(FactoryPanda.build('user', ['valid', 'has_mobile'], {country_code:'42'}))

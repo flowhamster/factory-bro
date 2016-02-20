@@ -40,7 +40,7 @@ var Factory = function () {
   return Factory;
 }();
 
-var FactoryBro = new Factory();
+var FactoryPanda = new Factory();
 
 var FactoryDefinition = function () {
   function FactoryDefinition() {
@@ -64,8 +64,8 @@ var FactoryDefinition = function () {
   return FactoryDefinition;
 }();
 
-exports.FactoryBro = FactoryBro;
+exports.FactoryPanda = FactoryPanda;
 exports.FactoryDefinition = FactoryDefinition;
 
-// module.exports = FactoryBro;
+// module.exports = FactoryPanda;
 

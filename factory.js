@@ -24,7 +24,7 @@ class Factory {
 
 }
 
-let FactoryBro = new Factory()
+let FactoryPanda = new Factory()
 
 class FactoryDefinition {
   static build(instance, traits=[], options={}) {
@@ -34,6 +34,6 @@ class FactoryDefinition {
   }
 }
 
-export { FactoryBro, FactoryDefinition }
+export { FactoryPanda, FactoryDefinition }
 
-// module.exports = FactoryBro;
+// module.exports = FactoryPanda;
