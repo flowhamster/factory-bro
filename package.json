@@ -1,14 +1,15 @@
 {
   "name": "factory-bro",
   "version": "0.0.1",
-  "description": "FactoryGirl like object generator in ES6",
-  "main": "factory.js",
+  "description": "FactoryGirl like TDD test object generator in ES6 and compiled with babel",
+  "main": "dist/factory.js",
   "dependencies": {},
   "devDependencies": {
     "backbone": "^1.2.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel factory.js > dist/factory.js"
   },
   "repository": {
     "type": "git",
