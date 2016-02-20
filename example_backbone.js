@@ -26,5 +26,3 @@ FactoryBro.define('user', User, class UserFactory extends FactoryDefinition {
 console.log(FactoryBro.build('user'))
 console.log(FactoryBro.build('user', ['valid']))
 console.log(FactoryBro.build('user', ['valid', 'has_mobile'], {country_code:'42'}))
-
-// console.log(Sidebar);
